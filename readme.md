@@ -2,12 +2,10 @@
 
 [![Build Status](https://travis-ci.org/ldez/travis-continuous-delivery-mkdocs-publish.svg?branch=source)](https://travis-ci.org/ldez/travis-continuous-delivery-mkdocs-publish)
 
-This project explains how to manipulate a Git repository within [Travis CI](https://travis-ci.org) to publish a static site on GitHub Page.
+This project explains how to manipulate a Git repository within [Travis CI](https://travis-ci.org) to publish a static documentation site build with [mkdocs](http://www.mkdocs.org) on GitHub Page.
 
 
 ## Create mkdocs projet
-
-[mkdocs](http://www.mkdocs.org)
 
 ```shell
 mkdocs new my-folder
