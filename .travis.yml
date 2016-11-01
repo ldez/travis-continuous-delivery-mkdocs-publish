@@ -1,0 +1,28 @@
+sudo: false
+
+language: python
+
+python:
+  - 3.5
+
+git:
+  depth: 10
+
+branches:
+  only:
+    - source
+
+install:
+  - pip install mkdocs
+
+env:
+  global:
+    - SOURCE_DIR="site"
+    - BUILD_BRANCH="source"
+    - DEPLOY_BRANCH="master"
+
+script:
+  - mkdocs build -c
+
+after_success:
+  - ./.travis/publish.sh
