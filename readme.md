@@ -7,6 +7,8 @@ This project explains how to manipulate a Git repository within [Travis CI](http
 
 ## Create mkdocs projet
 
+[mkdocs](http://www.mkdocs.org)
+
 ```shell
 mkdocs new my-folder
 cd my-folder
