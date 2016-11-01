@@ -1,3 +1,11 @@
+# Travis continuous delivery
+
+[![Build Status](https://travis-ci.org/ldez/travis-continuous-delivery-hugo-publish.svg?branch=hugo)](https://travis-ci.org/ldez/travis-continuous-delivery-hugo-publish)
+
+This project explains how to manipulate a Git repository within [Travis CI](https://travis-ci.org) to publish a static site on GitHub Page.
+
+
+## Create mkdocs projet
 
 ```shell
 mkdocs new my-folder
@@ -19,11 +27,11 @@ mkdocs gh-deploy --clean
 
 ## Fails
 
-DOESN'T WORK :'(
+Following commands doesn't work:
 
 ```shell
 git remote add docs ${GIT_REPO}
 mkdocs gh-deploy -c -m $REVISION -b master -r docs
 ```
 
-Fail without errors...
+And fail without errors...
